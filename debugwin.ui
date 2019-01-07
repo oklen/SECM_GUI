@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DebugWin</class>
+ <widget class="QWidget" name="DebugWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1711</width>
+    <height>998</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="sigmaGroup" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>520</y>
+     <width>1101</width>
+     <height>391</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="UXDLC" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>560</y>
+     <width>671</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="backgroundBrush">
+    <brush brushstyle="SolidPattern">
+     <color alpha="255">
+      <red>50</red>
+      <green>50</green>
+      <blue>50</blue>
+     </color>
+    </brush>
+   </property>
+  </widget>
+  <widget class="mylabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>0</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SECM</string>
+   </property>
+  </widget>
+  <widget class="PIGroup" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>60</y>
+     <width>1111</width>
+     <height>361</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>501</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="labelWithInputline" name="widget_4" native="true"/>
+    </item>
+    <item>
+     <widget class="labelWithInputline" name="widget_3" native="true"/>
+    </item>
+    <item>
+     <widget class="labelWithInputline" name="widget_5" native="true"/>
+    </item>
+    <item>
+     <widget class="labelWithInputline" name="widget_6" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="mylabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>30</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>纳米滑台</string>
+   </property>
+  </widget>
+  <widget class="mylabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>490</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>微米滑台</string>
+   </property>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>label</zorder>
+  <zorder>widget_2</zorder>
+  <zorder>widget</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PIGroup</class>
+   <extends>QWidget</extends>
+   <header>pigroup.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>sigmaGroup</class>
+   <extends>QWidget</extends>
+   <header>sigmagroup.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>mylabel</class>
+   <extends>QLabel</extends>
+   <header>mylabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>UXDLC</class>
+   <extends>QGraphicsView</extends>
+   <header>uxdlc.h</header>
+  </customwidget>
+  <customwidget>
+   <class>labelWithInputline</class>
+   <extends>QWidget</extends>
+   <header>labelwithinputline.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

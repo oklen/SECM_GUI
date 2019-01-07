@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="LeftStatus" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>151</width>
+      <height>1024</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="topstatus" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>0</y>
+      <width>1921</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="UXCCDW" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>70</y>
+      <width>621</width>
+      <height>481</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="fileopr" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>710</y>
+      <width>841</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="scanarea" name="widget_5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>120</y>
+      <width>721</width>
+      <height>581</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="mylabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>70</y>
+      <width>521</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>扫描范围 - 50.0 x 50.0 μm²</string>
+    </property>
+   </widget>
+   <widget class="UXDLC" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>710</y>
+      <width>761</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="backgroundBrush">
+     <brush brushstyle="SolidPattern">
+      <color alpha="255">
+       <red>50</red>
+       <green>50</green>
+       <blue>50</blue>
+      </color>
+     </brush>
+    </property>
+   </widget>
+   <widget class="mylabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>710</y>
+      <width>521</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>扫描轨迹</string>
+    </property>
+   </widget>
+   <zorder>widget_2</zorder>
+   <zorder>widget_3</zorder>
+   <zorder>widget_4</zorder>
+   <zorder>widget</zorder>
+   <zorder>widget_5</zorder>
+   <zorder>label</zorder>
+   <zorder>graphicsView</zorder>
+   <zorder>label_2</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>LeftStatus</class>
+   <extends>QWidget</extends>
+   <header>leftstatus.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>topstatus</class>
+   <extends>QWidget</extends>
+   <header>topstatus.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>UXCCDW</class>
+   <extends>QWidget</extends>
+   <header>uxccdw.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>fileopr</class>
+   <extends>QWidget</extends>
+   <header>fileopr.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>scanarea</class>
+   <extends>QWidget</extends>
+   <header>scanarea.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>mylabel</class>
+   <extends>QLabel</extends>
+   <header>mylabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>UXDLC</class>
+   <extends>QGraphicsView</extends>
+   <header>uxdlc.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
